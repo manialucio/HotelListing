@@ -112,16 +112,6 @@ namespace HotelListing.Api.Controllers
 
             }
             await _countriesRepository.DeleteAsync(id);
-
-            //var country = await  _context.Countries.FindAsync(id);
-            //if (country == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //_context.Countries.Remove(country);
-            //await _context.SaveChangesAsync();
-
             return NoContent();
         }
 
