@@ -4,6 +4,7 @@ using HotelListing.Api.Data;
 using HotelListing.Api.Configurations;
 using HotelListing.Api.Contracts;
 using HotelListing.Api.Repository;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +14,18 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("HotelListingDBConnectionString");
 
 
-builder.Services.AddDbContext<HotelListingDbContext>( o =>
-{
-    o.UseSqlServer(connectionString);
-});
+builder.Services
+    .AddDbContext<HotelListingDbContext>( o =>{
+                                            o.UseSqlServer(connectionString);
+                                        })
+    .AddDbContext<HotelListingIdentityDbContext>( o=> {
+                                            o.UseSqlServer(connectionString);
+                                        });
 
+builder.Services.AddIdentityCore<ApiUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<HotelListingIdentityDbContext>();
+    
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
