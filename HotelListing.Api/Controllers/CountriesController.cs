@@ -9,11 +9,13 @@ using HotelListing.Api.Data;
 using HotelListing.Api.Models.Country;
 using AutoMapper;
 using HotelListing.Api.Contracts;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HotelListing.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class CountriesController : ControllerBase
     {
         private readonly IMapper _mapper;

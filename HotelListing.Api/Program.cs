@@ -5,6 +5,10 @@ using HotelListing.Api.Configurations;
 using HotelListing.Api.Contracts;
 using HotelListing.Api.Repository;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,31 +19,53 @@ var connectionString = builder.Configuration.GetConnectionString("HotelListingDB
 
 
 builder.Services
-    .AddDbContext<HotelListingDbContext>( o =>{
-                                            o.UseSqlServer(connectionString);
-                                        })
-    .AddDbContext<HotelListingIdentityDbContext>( o=> {
-                                            o.UseSqlServer(connectionString);
-                                        });
+    .AddDbContext<HotelListingDbContext>(o =>
+    {
+        o.UseSqlServer(connectionString);
+    })
+    .AddDbContext<HotelListingIdentityDbContext>(o =>
+    {
+        o.UseSqlServer(connectionString);
+    });
 
 builder.Services.AddIdentityCore<ApiUser>()
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<HotelListingIdentityDbContext>();
-    
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 builder.Services.AddScoped<IHotelsRepository, HotelsRepository>();
+builder.Services.AddScoped<IAuthManager, AuthManager>();
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; //"Bearer".
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 
+}).
+    AddJwtBearer(options => options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero,
+        ValidIssuer = builder.Configuration["JwtSettings:Issuer"],
+        ValidAudience = builder.Configuration["JwtSettings:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])),
+
+    }
+
+    )
+    ;
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddCors( o=>
+builder.Services.AddCors(o =>
 {
     o.AddPolicy("AllowAll", b => b.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
-    });
+});
 
 builder.Host.UseSerilog((ctx, cfg) =>
 {
@@ -58,7 +84,7 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
