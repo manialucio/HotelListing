@@ -34,7 +34,7 @@ namespace HotelListing.Api.Controllers
             }
             return Ok();
         }
-        // api/Account/login
+        // POST: api/Account/login
         [HttpPost]
         [Route("Login")]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -44,6 +44,22 @@ namespace HotelListing.Api.Controllers
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
         {
             var response = await _authManager.Login(loginDto);
+            if (response == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(response);
+        }
+
+        // POST: api/Account/refreshtoken
+        [HttpPost]
+        [Route("RefreshToken")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> RefreshToken([FromBody] AuthResponseDto request)
+        {
+            var response = await _authManager.VerifyRefreshToken(request);
             if (response == null)
             {
                 return Unauthorized();

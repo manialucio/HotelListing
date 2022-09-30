@@ -15,7 +15,6 @@ namespace HotelListing.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class CountriesController : ControllerBase
     {
         private readonly IMapper _mapper;
@@ -56,6 +55,7 @@ namespace HotelListing.Api.Controllers
         // PUT: api/Countries/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> PutCountry(int id, UpdateCountryDto countryToUpdate)
         {
             if (id != countryToUpdate.Id)
@@ -94,6 +94,7 @@ namespace HotelListing.Api.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountry)
         {
             var country = _mapper.Map<Country>(createCountry);
@@ -106,6 +107,7 @@ namespace HotelListing.Api.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
+        [Authorize(Roles ="Administrator")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
             if (! await _countriesRepository.Exists(id))
