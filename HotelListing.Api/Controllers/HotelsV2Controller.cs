@@ -14,13 +14,13 @@ namespace HotelListing.Api.Controllers
 {
     [Route("api/v{version:ApiVersion}/hotels")]
     [ApiController]
-    [ApiVersion("1.0", Deprecated =true)]
-    public class HotelsController : ControllerBase
+    [ApiVersion("2.0")]
+    public class HotelsV2Controller : ControllerBase
     {
         private readonly IHotelsRepository _hotelsRepository;
         private readonly IMapper _mapper;
 
-        public HotelsController(IHotelsRepository hotelsRepository, IMapper mapper)
+        public HotelsV2Controller(IHotelsRepository hotelsRepository, IMapper mapper)
         {
             _mapper = mapper;
             _hotelsRepository = hotelsRepository;

@@ -10,6 +10,7 @@ using HotelListing.Api.Models.Country;
 using AutoMapper;
 using HotelListing.Api.Contracts;
 using Microsoft.AspNetCore.Authorization;
+using HotelListing.Api.Exceptions;
 
 namespace HotelListing.Api.Controllers
 {
@@ -45,7 +46,7 @@ namespace HotelListing.Api.Controllers
 
             if (country == null)
             {
-                return NotFound();
+                throw new NotFoundException(nameof(GetCountry), id);
             }
 
             var retVal = _mapper.Map<CountryDto>(country);
@@ -67,7 +68,7 @@ namespace HotelListing.Api.Controllers
             var country = await _countriesRepository.GetAsync(id);
             if (country == null)
             {
-                return NotFound();
+                throw new NotFoundException(nameof(PutCountry), id);
             }
             // automapper "sporca" l'oggetto a EF mette lo stato a modify
             _mapper.Map(countryToUpdate, country);
@@ -112,7 +113,7 @@ namespace HotelListing.Api.Controllers
         {
             if (! await _countriesRepository.Exists(id))
             {
-                return NotFound();
+                throw new NotFoundException(nameof(DeleteCountry), id);
 
             }
             await _countriesRepository.DeleteAsync(id);
