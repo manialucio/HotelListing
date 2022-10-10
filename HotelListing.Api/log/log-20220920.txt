@@ -1,0 +1,5 @@
+2022-09-20 21:20:54.328 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-20 21:20:54.425 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-20 21:20:54.441 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-20 21:20:54.443 +02:00 [INF] Hosting environment: Development
+2022-09-20 21:20:54.444 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\

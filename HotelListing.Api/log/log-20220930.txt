@@ -1,0 +1,28 @@
+2022-09-30 19:00:20.445 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-30 19:00:20.526 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-30 19:00:20.535 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-30 19:00:20.536 +02:00 [INF] Hosting environment: Development
+2022-09-30 19:00:20.537 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-30 19:59:30.672 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-30 19:59:30.732 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-30 19:59:30.744 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-30 19:59:30.748 +02:00 [INF] Hosting environment: Development
+2022-09-30 19:59:30.750 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-30 19:59:46.460 +02:00 [WRN] Invalid password for user.
+2022-09-30 20:02:25.602 +02:00 [WRN] Invalid password for user.
+2022-09-30 20:02:49.394 +02:00 [WRN] Invalid password for user.
+2022-09-30 20:09:43.400 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-30 20:09:43.471 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-30 20:09:43.480 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-30 20:09:43.481 +02:00 [INF] Hosting environment: Development
+2022-09-30 20:09:43.482 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-30 21:16:00.993 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-30 21:16:01.063 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-30 21:16:01.081 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-30 21:16:01.082 +02:00 [INF] Hosting environment: Development
+2022-09-30 21:16:01.084 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-30 21:18:47.226 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-30 21:18:47.280 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-30 21:18:47.292 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-30 21:18:47.294 +02:00 [INF] Hosting environment: Development
+2022-09-30 21:18:47.295 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\

@@ -1,0 +1,172 @@
+2022-09-29 19:46:39.133 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 19:46:39.203 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 19:46:39.213 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 19:46:39.215 +02:00 [INF] Hosting environment: Development
+2022-09-29 19:46:39.217 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 19:46:52.819 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-09-29 19:47:53.420 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 19:47:53.482 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 19:47:53.492 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 19:47:53.494 +02:00 [INF] Hosting environment: Development
+2022-09-29 19:47:53.495 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 19:48:17.334 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-09-29 19:49:46.983 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 19:49:47.039 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 19:49:47.048 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 19:49:47.050 +02:00 [INF] Hosting environment: Development
+2022-09-29 19:49:47.052 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 19:50:19.045 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 20:29:39.577 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 20:29:39.648 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 20:29:39.658 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 20:29:39.660 +02:00 [INF] Hosting environment: Development
+2022-09-29 20:29:39.661 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 20:29:56.671 +02:00 [WRN] Invalid password for user.
+2022-09-29 20:30:16.450 +02:00 [WRN] Invalid password for user.
+2022-09-29 20:30:46.519 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 20:31:15.670 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 20:31:57.037 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 20:32:12.494 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 20:32:18.427 +02:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit;PasswordRequiresUpper.
+2022-09-29 21:49:01.072 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 21:49:01.154 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 21:49:01.163 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:49:01.164 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:49:01.165 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 21:51:48.115 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 21:51:48.307 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 21:51:48.323 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:51:48.324 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:51:48.325 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 21:52:58.529 +02:00 [WRN] Invalid password for user.
+2022-09-29 21:57:33.517 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 21:57:33.589 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 21:57:33.597 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 21:57:33.598 +02:00 [INF] Hosting environment: Development
+2022-09-29 21:57:33.600 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 22:05:55.647 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 22:05:55.699 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 22:05:55.709 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 22:05:55.711 +02:00 [INF] Hosting environment: Development
+2022-09-29 22:05:55.712 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 22:06:13.067 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The DbContextOptions passed to the HotelListingDbContext constructor must be a DbContextOptions<HotelListingDbContext>. When registering multiple DbContext types, make sure that the constructor for each context type has a DbContextOptions<TContext> parameter rather than a non-generic DbContextOptions parameter.
+   at Microsoft.EntityFrameworkCore.DbContext..ctor(DbContextOptions options)
+   at HotelListing.Api.Data.HotelListingDbContext..ctor(DbContextOptions options) in C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\Data\HotelListingDbContext.cs:line 9
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method14(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-09-29 22:06:49.699 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The DbContextOptions passed to the HotelListingDbContext constructor must be a DbContextOptions<HotelListingDbContext>. When registering multiple DbContext types, make sure that the constructor for each context type has a DbContextOptions<TContext> parameter rather than a non-generic DbContextOptions parameter.
+   at Microsoft.EntityFrameworkCore.DbContext..ctor(DbContextOptions options)
+   at HotelListing.Api.Data.HotelListingDbContext..ctor(DbContextOptions options) in C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\Data\HotelListingDbContext.cs:line 9
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method14(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-09-29 22:11:42.309 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 22:11:42.355 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 22:11:42.359 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 22:11:42.361 +02:00 [INF] Hosting environment: Development
+2022-09-29 22:11:42.362 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 22:11:47.172 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 22:11:47.241 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 22:11:47.249 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 22:11:47.250 +02:00 [INF] Hosting environment: Development
+2022-09-29 22:11:47.251 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
+2022-09-29 22:13:03.199 +02:00 [INF] Now listening on: https://localhost:7042
+2022-09-29 22:13:03.266 +02:00 [INF] Now listening on: http://localhost:5042
+2022-09-29 22:13:03.274 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-29 22:13:03.275 +02:00 [INF] Hosting environment: Development
+2022-09-29 22:13:03.276 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
