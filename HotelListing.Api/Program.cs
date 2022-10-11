@@ -11,6 +11,7 @@ using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using HotelListing.Api.Middleware;
 using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.AspNetCore.OData;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -62,7 +63,6 @@ builder.Services.AddAuthentication(options =>
     )
     ;
 
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -99,6 +99,10 @@ builder.Services.AddResponseCaching(options =>
     options.MaximumBodySize = 1024;
     options.UseCaseSensitivePaths = true;
 
+});
+builder.Services.AddControllers().AddOData( options=>
+{
+    options.Select().Filter().OrderBy();
 });
 
 var app = builder.Build();

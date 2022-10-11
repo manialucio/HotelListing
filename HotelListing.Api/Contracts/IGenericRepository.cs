@@ -1,4 +1,5 @@
 ﻿using HotelListing.Api.Data;
+using HotelListing.Api.Models;
 
 namespace HotelListing.Api.Contracts
 {
@@ -6,6 +7,7 @@ namespace HotelListing.Api.Contracts
     {
         Task<T> GetAsync(int? id);
         Task<List<T>> GetAllAsync();
+        Task<PagedResult<TResult>> GetAllAsync<TResult>(QueryParameters queryParameters);
         Task<T> AddAsync(T entity);
         Task<T> UpdateAsync(T entity);
         Task DeleteAsync(int id);   
