@@ -4,7 +4,7 @@
 2022-09-29 19:46:39.215 +02:00 [INF] Hosting environment: Development
 2022-09-29 19:46:39.217 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
 2022-09-29 19:46:52.819 +02:00 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
+System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Core.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
    at lambda_method10(Closure , IServiceProvider , Object[] )
    at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
@@ -26,7 +26,7 @@ System.InvalidOperationException: Unable to resolve service for type 'HotelListi
 2022-09-29 19:47:53.494 +02:00 [INF] Hosting environment: Development
 2022-09-29 19:47:53.495 +02:00 [INF] Content root path: C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\
 2022-09-29 19:48:17.334 +02:00 [ERR] An unhandled exception has occurred while executing the request.
-System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
+System.InvalidOperationException: Unable to resolve service for type 'HotelListing.Api.Core.Contracts.IAuthManager' while attempting to activate 'HotelListing.Api.Controllers.AccountController'.
    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
    at lambda_method10(Closure , IServiceProvider , Object[] )
    at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)

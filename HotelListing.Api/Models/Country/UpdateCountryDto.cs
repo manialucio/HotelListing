@@ -1,9 +1,0 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace HotelListing.Api.Models.Country
-{
-    public class UpdateCountryDto:BaseCountryDtoWithId
-    {
-
-    }
-}

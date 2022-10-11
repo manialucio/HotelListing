@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListing.Api.Data;
 using AutoMapper;
-using HotelListing.Api.Contracts;
-using HotelListing.Api.Models.Hotel;
-using HotelListing.Api.Models;
+using HotelListing.Api.Core.Contracts;
+using HotelListing.Api.Core.Models.Hotel;
+using HotelListing.Api.Core.Models;
 using Microsoft.AspNetCore.OData.Query;
 
 namespace HotelListing.Api.Controllers

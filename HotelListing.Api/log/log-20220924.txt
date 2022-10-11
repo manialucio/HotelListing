@@ -13,7 +13,7 @@ AutoMapper.AutoMapperMappingException: Missing type map configuration or unsuppo
 
 Mapping types:
 List`1 -> GetCountryDto
-System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Models.Country.GetCountryDto
+System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Core.Models.Country.GetCountryDto
    at lambda_method85(Closure , Object , GetCountryDto , ResolutionContext )
    at HotelListing.Api.Controllers.CountriesController.GetCountries() in C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\Controllers\CountriesController.cs:line 32
    at lambda_method78(Closure , Object )
@@ -41,7 +41,7 @@ AutoMapper.AutoMapperMappingException: Missing type map configuration or unsuppo
 
 Mapping types:
 List`1 -> GetCountryDto
-System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Models.Country.GetCountryDto
+System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Core.Models.Country.GetCountryDto
    at lambda_method58(Closure , Object , GetCountryDto , ResolutionContext )
    at HotelListing.Api.Controllers.CountriesController.GetCountries() in C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\Controllers\CountriesController.cs:line 32
    at lambda_method6(Closure , Object )
@@ -64,7 +64,7 @@ AutoMapper.AutoMapperMappingException: Missing type map configuration or unsuppo
 
 Mapping types:
 List`1 -> GetCountryDto
-System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Models.Country.GetCountryDto
+System.Collections.Generic.List`1[[HotelListing.Api.Data.Country, HotelListing.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListing.Api.Core.Models.Country.GetCountryDto
    at lambda_method58(Closure , Object , GetCountryDto , ResolutionContext )
    at HotelListing.Api.Controllers.CountriesController.GetCountries() in C:\ProgettiVS\CorsoWebApi\HotelListing\HotelListing.Api\Controllers\CountriesController.cs:line 32
    at lambda_method6(Closure , Object )
