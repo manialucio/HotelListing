@@ -32,9 +32,13 @@ namespace HotelListing.Api.Controllers
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
 
-            var countries = await _countriesRepository.GetAllAsync();
-            var countryList = _mapper.Map<List<GetCountryDto>>(countries);
-            return Ok(countryList);
+            //var countries = await _countriesRepository.GetAllAsync();
+            //var countryList = _mapper.Map<List<GetCountryDto>>(countries);
+            //            return Ok(countryList);
+
+            var countries = await _countriesRepository.GetAllAsync<GetCountryDto>();
+
+            return Ok(countries);
         }
 
         // GET: api/Countries/5
@@ -42,15 +46,18 @@ namespace HotelListing.Api.Controllers
         public async Task<ActionResult<CountryDto>> GetCountry(int id)
         {
 
-            var country = await _countriesRepository.GetDetails(id);
+            //var country = await _countriesRepository.GetDetails(id);
 
-            if (country == null)
-            {
-                throw new NotFoundException(nameof(GetCountry), id);
-            }
+            //if (country == null)
+            //{
+            //    throw new NotFoundException(nameof(GetCountry), id);
+            //}
 
-            var retVal = _mapper.Map<CountryDto>(country);
-            return Ok(retVal);
+            //var retVal = _mapper.Map<CountryDto>(country);
+            //return Ok(retVal);
+
+            var country = await _countriesRepository.GetAsync<CountryDto>(id);
+            return Ok(country);
         }
 
         // PUT: api/Countries/5
@@ -75,7 +82,7 @@ namespace HotelListing.Api.Controllers
 
             try
             {
-            await _countriesRepository.UpdateAsync(country);
+                await _countriesRepository.UpdateAsync(country);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -108,10 +115,10 @@ namespace HotelListing.Api.Controllers
 
         // DELETE: api/Countries/5
         [HttpDelete("{id}")]
-        [Authorize(Roles ="Administrator")]
+        [Authorize(Roles = "Administrator")]
         public async Task<IActionResult> DeleteCountry(int id)
         {
-            if (! await _countriesRepository.Exists(id))
+            if (!await _countriesRepository.Exists(id))
             {
                 throw new NotFoundException(nameof(DeleteCountry), id);
 
